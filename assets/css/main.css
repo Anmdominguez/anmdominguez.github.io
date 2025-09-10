@@ -2640,16 +2640,18 @@ input, select, textarea {
   gap: 30px;                 /* space between images */
 }
 
-/* Thumbnail sizing (override theme's img {width:100%}) */
+
 #Publications .pub-thumb {
-  width: 500px !important;   /* set the exact size you want */
+  width: 500px !important;   /* exact size */
   height: auto;
-  flex: 0 0 auto;            /* keep fixed width in the row */
+  max-width: none !important; /* override theme’s max-width:100% */
+  flex: 0 0 auto;
   border-radius: 6px;
   border: 1px solid #e2e2e2;
   box-shadow: 0 2px 8px rgba(0,0,0,.05);
   transition: transform .2s;
 }
+
 
 #Publications .pub-thumb:hover {
   transform: scale(3.0);
