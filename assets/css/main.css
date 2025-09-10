@@ -2642,7 +2642,7 @@ input, select, textarea {
 
 
 #Publications .pub-thumb {
-  width: 500px !important;   /* exact size */
+  width: 250px !important;   /* exact size */
   height: auto;
   max-width: none !important; /* override theme’s max-width:100% */
   flex: 0 0 auto;
@@ -2652,9 +2652,8 @@ input, select, textarea {
   transition: transform .2s;
 }
 
-
 #Publications .pub-thumb:hover {
-  transform: scale(3.0);
+  transform: scale(2.0);
 }
 
 /* Optional: scale up a bit on small screens */
