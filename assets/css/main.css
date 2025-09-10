@@ -2632,25 +2632,32 @@ input, select, textarea {
 
 	}
 
-/* Layout for Publications */
-#Publications .container {
+/* Row layout */
+#Publications .pubs-row {
   display: flex;
-  flex-wrap: wrap;       /* wrap to next line if screen is narrow */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;             /* space between images */
+  gap: 28px;                 /* space between images */
 }
 
-/* Images inside Publications */
-#Publications img {
-  width: 40%;            /* matches your inline 40% */
-  max-width: 250px;      /* prevents them from being too big on large screens */
+/* Thumbnail sizing (override theme's img {width:100%}) */
+#Publications .pub-thumb {
+  width: 220px !important;   /* set the exact size you want */
   height: auto;
-  border: 1px solid #ddd;
+  flex: 0 0 auto;            /* keep fixed width in the row */
   border-radius: 6px;
-  transition: transform 0.2s;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  transition: transform .2s;
 }
 
-#Publications img:hover {
-  transform: scale(1.05); /* slight zoom on hover */
+#Publications .pub-thumb:hover {
+  transform: scale(1.04);
 }
+
+/* Optional: scale up a bit on small screens */
+@media (max-width: 640px) {
+  #Publications .pub-thumb { width: 42vw !important; }
+}
+
 
