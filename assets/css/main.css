@@ -2642,7 +2642,7 @@ input, select, textarea {
 
 /* Thumbnail sizing (override theme's img {width:100%}) */
 #Publications .pub-thumb {
-  width: 400px !important;   /* set the exact size you want */
+  width: 500px !important;   /* set the exact size you want */
   height: auto;
   flex: 0 0 auto;            /* keep fixed width in the row */
   border-radius: 6px;
@@ -2652,7 +2652,7 @@ input, select, textarea {
 }
 
 #Publications .pub-thumb:hover {
-  transform: scale(1.5);
+  transform: scale(3.0);
 }
 
 /* Optional: scale up a bit on small screens */
