@@ -2652,7 +2652,7 @@ input, select, textarea {
 }
 
 #Publications .pub-thumb:hover {
-  transform: scale(1.04);
+  transform: scale(1.5);
 }
 
 /* Optional: scale up a bit on small screens */
