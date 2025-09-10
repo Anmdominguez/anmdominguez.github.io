@@ -2632,22 +2632,4 @@ input, select, textarea {
 
 	}
 
-.pubs-row {
-  display: flex;
-  justify-content: center;   /* center them horizontally */
-  flex-wrap: wrap;           /* wrap to next line if screen is small */
-  gap: 20px;                 /* space between thumbnails */
-}
-
-.pubs-row img {
-  width: 200px;              /* adjust size as needed */
-  height: auto;
-  border: 1px solid #ddd;    /* optional: light border */
-  border-radius: 5px;        /* optional: rounded corners */
-  transition: transform 0.2s;
-}
-
-.pubs-row img:hover {
-  transform: scale(1.05);    /* slight zoom effect on hover */
-}
 
