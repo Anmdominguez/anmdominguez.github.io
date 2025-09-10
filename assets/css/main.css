@@ -2632,4 +2632,25 @@ input, select, textarea {
 
 	}
 
+/* Layout for Publications */
+#Publications .container {
+  display: flex;
+  flex-wrap: wrap;       /* wrap to next line if screen is narrow */
+  justify-content: center;
+  gap: 30px;             /* space between images */
+}
+
+/* Images inside Publications */
+#Publications img {
+  width: 40%;            /* matches your inline 40% */
+  max-width: 250px;      /* prevents them from being too big on large screens */
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+#Publications img:hover {
+  transform: scale(1.05); /* slight zoom on hover */
+}
 
